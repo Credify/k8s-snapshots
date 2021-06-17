@@ -1,12 +1,11 @@
-FROM docker-upgrade.artifactory.build.upgrade.com/python-base:2.0.20210421.0-222.3.7-232
+FROM python:3.6-alpine
 
-USER root
 ADD . /app
 WORKDIR /app
-RUN pip3 install -r requirements.txt \
-    && python3 setup.py install
-
-USER upgrade
+RUN apk add --no-cache --virtual .build_deps gcc musl-dev \
+    && pip install -r requirements.txt \
+    && python setup.py install \
+    && apk del .build_deps gcc musl-dev
 ENV TZ UTC
 
 CMD ["k8s-snapshots"]
