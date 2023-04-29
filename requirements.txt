@@ -3,7 +3,7 @@ pykube==0.14.0
 tarsnapper==0.4.0
 aiochannel==0.2.2
 structlog[dev]==17.2.0
-attrs==17.3.0
+attrs==23.1.0
 pendulum==0.8.0
 confcollect==0.2.3
 isodate==0.5.4
