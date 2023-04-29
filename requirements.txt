@@ -15,4 +15,4 @@ yarl==1.1.1
 python-digitalocean==1.15.0
 urllib3==1.26.5
 setuptools==57.0.0
-requests==2.25.1
+requests==2.29.0
