@@ -5,7 +5,7 @@ aiochannel==0.2.2
 structlog[dev]==17.2.0
 attrs==17.3.0
 pendulum==0.8.0
-confcollect==0.2.3
+confcollect==0.3.1
 isodate==0.5.4
 python-dateutil==2.6.0
 aiohttp==3.5.4
