@@ -12,7 +12,7 @@ aiohttp==3.5.4
 aiostream==0.2.4
 boto3==1.17.83
 yarl==1.1.1
-python-digitalocean==1.15.0
+python-digitalocean==1.17.0
 urllib3==1.26.5
 setuptools==57.0.0
 requests==2.25.1
